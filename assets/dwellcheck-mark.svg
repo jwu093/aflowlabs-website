@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title desc">
+  <title id="title">DwellCheck mark</title>
+  <desc id="desc">A lime house and search mark on a dark green rounded square.</desc>
+  <rect width="120" height="120" rx="32" fill="#173F32" />
+  <path
+    fill="#DFF27C"
+    d="M32 56.5 60 32l28 24.5-5.3 6.1-5.2-4.6v26H61.8V67.8H50.5V84H34.2V58l-5.1 4.6L32 56.5Z"
+  />
+  <circle cx="74" cy="73.5" r="15.2" fill="#173F32" stroke="#DFF27C" stroke-width="7.5" />
+  <path
+    fill="none"
+    stroke="#DFF27C"
+    stroke-linecap="round"
+    stroke-width="7.5"
+    d="m84.8 84.3 12.1 12.1"
+  />
+</svg>
