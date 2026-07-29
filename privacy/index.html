@@ -40,8 +40,8 @@
           what we process, why we process it and the choices available to you.
         </p>
         <p class="legal-meta">
-          Effective 24 July 2026 <span aria-hidden="true">·</span> Version
-          2026-07-24
+          Effective 29 July 2026 <span aria-hidden="true">·</span> Version
+          2026-07-29
         </p>
       </header>
 
@@ -64,13 +64,16 @@
             <ul class="plain-list">
               <li>We use your documents to create the report you request.</li>
               <li>
-                DwellCheck is not a document vault. We do not intentionally
-                retain original uploaded files in our own long-term document
-                storage after processing by default.
+                DwellCheck may keep a private temporary document copy for up
+                to 24 hours so an interrupted review can recover. It is
+                normally deleted sooner after completion, failure or
+                cancellation.
               </li>
               <li>
-                Reports stay linked to your account until you delete them or
-                delete your account, subject to limited legal obligations.
+                Reports stay linked to your account until you delete an
+                unlocked report or delete your account, subject to limited
+                legal obligations. Locked previews remain in your library so
+                the limited free allowance cannot be lost accidentally.
               </li>
               <li>
                 We may retain de-identified learning signals for a limited time
@@ -94,6 +97,10 @@
                 generated reports;
               </li>
               <li>purchase, entitlement and free-preview records;</li>
+              <li>
+                a device-specific push token when you enable report-ready
+                notifications;
+              </li>
               <li>support requests and messages you send us; and</li>
               <li>
                 limited device, security, reliability and product-usage
@@ -118,6 +125,7 @@
                 comparisons, scores and reports;
               </li>
               <li>restore reports, purchases and access entitlements;</li>
+              <li>notify you when a requested report is ready;</li>
               <li>operate free-preview limits and prevent misuse;</li>
               <li>provide support and investigate reliability issues;</li>
               <li>protect users, DwellCheck and our systems; and</li>
@@ -141,12 +149,14 @@
               validation and scoring rules to those findings.
             </p>
             <p>
-              DwellCheck does not intentionally retain original uploaded files
-              in its own long-term document storage after processing by default.
-              Temporary processing copies may exist while a review is being
-              created or handled by our service providers under their applicable
-              service terms and safeguards. Keep your original files because
-              DwellCheck is not a document vault.
+              DwellCheck may keep a private temporary copy of a selected
+              document for up to 24 hours so a review can recover from an
+              interruption. The copy is deleted sooner after the review
+              completes, fails or is cancelled. DwellCheck requests that its AI
+              provider does not store generated response application state,
+              but the provider may retain limited data for security or legal
+              purposes under its applicable terms. Keep your original files
+              because DwellCheck is not a document vault.
             </p>
             <div class="legal-note">
               <strong>Avoid sending documents by email.</strong>
@@ -160,8 +170,8 @@
             <h2>Service providers and overseas processing</h2>
             <p>
               We use providers for cloud hosting, databases, authentication,
-              AI processing and payments. These may include AWS, Supabase,
-              OpenAI, Apple and Google where relevant.
+              AI processing, notifications and payments. These may include AWS,
+              Supabase, OpenAI, Expo, Apple and Google where relevant.
             </p>
             <p>
               Those providers may process information outside New Zealand. We
@@ -175,10 +185,23 @@
           <section id="retention">
             <h2>Reports, learning signals and retention</h2>
             <p>
-              Generated reports and purchase entitlements remain associated with
-              your account until you delete the report or account, unless we
-              need to retain a record to meet a legal obligation, resolve a
-              dispute or protect the service.
+              Generated reports and purchase entitlements remain associated
+              with your account until you delete an unlocked report or delete
+              your account, subject to records we must retain by law. Locked
+              previews remain in your library to protect the limited free
+              allowance from accidental loss.
+            </p>
+            <p>
+              We retain a minimal Apple purchase record, such as the
+              transaction identifier, product, purchase time and entitlement
+              outcome, to restore access, prevent the same transaction being
+              reused and meet accounting or legal obligations. If the related
+              account or report is deleted, this record may be retained without
+              the deleted account or report link.
+            </p>
+            <p>
+              Notification delivery receipts may be retained for up to 30 days
+              to diagnose delivery failures and disable invalid device tokens.
             </p>
             <p>
               To improve DwellCheck’s accuracy and safety, we may retain
@@ -201,15 +224,21 @@
 
             <h3>Deleting reports or your account</h3>
             <p>
-              Deleting a report removes the report and its associated access
-              from your account. De-identified improvement records may remain
-              for the limited period described above.
+              Deleting an unlocked report cancels active processing for that
+              property and removes the report, temporary upload and associated
+              access from your account. Locked previews cannot be deleted from
+              the normal Reviews library, but deleting your account removes
+              them with the rest of your account-linked data. De-identified
+              improvement records may remain for the limited period described
+              above.
             </p>
             <p>
-              Deleting your account removes the account and account-linked
-              reports, entitlements and profile data, except information we must
-              retain by law, information already de-identified and the
-              short-lived free-preview fingerprint described above.
+              Deleting your account cancels active processing and removes
+              temporary uploads, the account and account-linked reports,
+              entitlements, notification tokens and profile data, except
+              information we must retain by law, information already
+              de-identified and the short-lived free-preview fingerprint
+              described above.
             </p>
           </section>
 
