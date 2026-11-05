@@ -7,3 +7,6 @@
 
 /* Task-based support uses native disclosures; legal policy text remains prose. */
 .support-document section{scroll-margin-top:24px;margin-block:32px}.support-document h2{margin-top:0}.support-topics{display:flex;flex-wrap:wrap;gap:6px 20px;padding:14px 0 20px;border-bottom:1px solid var(--read-line)}.support-topics a{min-height:44px;display:inline-flex;align-items:center}.support-answer{border-bottom:1px solid var(--read-line);padding:0}.support-answer>summary{cursor:pointer;padding:18px 22px 18px 0;min-height:56px;font-weight:650;line-height:1.55}.support-answer>div{padding:0 0 12px}.support-answer p{margin:0 0 16px}.support-answer li{margin-block:9px}.support-answer ul,.support-answer ol{padding-left:24px}.support-answer[open]>summary{color:var(--read-ink)}
+
+/* Display the unchanged accepted app icon with platform-like rounded corners. */
+.read-brand img,.product-heading img{border-radius:22%;object-fit:contain}

@@ -2,7 +2,7 @@
 """Static company/product boundary and accessible-content regression checks."""
 from pathlib import Path
 from html.parser import HTMLParser
-import json,re
+import json,re,hashlib
 ROOT=Path(__file__).resolve().parents[1]
 d=json.loads((ROOT/'data/site-navigation.json').read_text())
 assert [x['label']for x in d['company']]==['Home','Products','About','Contact']
@@ -35,3 +35,11 @@ support=(ROOT/'support/aflow-read/index.html').read_text()
 assert all(x in support for x in ['Add Library Folder','Show books with multiple files','Consolidation Stopped','Saving Library','Restore Access','Go back to','Settings → Send Feedback'])
 assert 'Purchase-help instructions will be added after the final App Store configuration is verified'in support
 print(json.dumps({'status':'PASS','scope':'static hierarchy, generated shells, truthful prelaunch boundaries and semantic content','pages':8},indent=2))
+
+# Aflow Read branding must use the actual accepted app asset, not a substitute mark.
+icon = '/assets/aflow-read/app-icon.png'
+assert hashlib.sha256((ROOT/icon.lstrip('/')).read_bytes()).hexdigest() == 'a0e91faa7a0a3709de3d9b0bda6c0561e2b5c1cadfac15d72cc735e7577fa580'
+for relative in ['index.html','aflow-read/index.html','aflow-read/roadmap/index.html','support/aflow-read/index.html','legal/aflow-read/privacy/index.html']:
+    text = (ROOT/relative).read_text()
+    assert icon in text and '/assets/aflow-read/mark.svg' not in text, relative
+print('Accepted app-icon identity and all active Aflow Read placements: PASS')
