@@ -1,0 +1,229 @@
+{
+  "schemaVersion": 1,
+  "product": "Aflow Read",
+  "tagline": "Your books. Your space. Your reading experience.",
+  "lastReviewed": "2026-11-05",
+  "reviewNote": "Reviewed for our current launch plans and longer-term product direction.",
+  "publication": {
+    "phase": "prelaunch",
+    "acceptedPublicRelease": null,
+    "notice": "We are preparing Aflow Read’s first public App Store release. Explore the intended launch foundation below while final release checks are completed."
+  },
+  "expectations": "This roadmap shares our direction, not guaranteed release commitments. Priorities, scope and order may change as we learn from readers and testing. No release dates or future prices are promised.",
+  "philosophy": "A native reading experience for iPhone and iPad, built around the books you own. Basic reading and library management should not depend on a subscription, a cloud service or an external library-management tool.",
+  "performance": {
+    "title": "A growing library should still feel like yours.",
+    "description": "Responsiveness is a continuing priority across every phase: fast browsing, efficient cover loading and updates that focus on changed books. We are building for larger personal collections without promising a fixed book-count or device-performance guarantee."
+  },
+  "contact": {
+    "label": "Share a feature idea",
+    "url": "mailto:help@aflowlabs.com?subject=Aflow%20Read%20feature%20request",
+    "supportUrl": "/support/aflow-read/"
+  },
+  "sections": [
+    {
+      "id": "available",
+      "title": "Available Now",
+      "eyebrow": "The launch foundation",
+      "description": "The first public App Store release is still being prepared. Here is a preview of its intended foundation. Released features will appear here once they are publicly available.",
+      "emptyMessage": "Public availability will be confirmed here when the first release is ready."
+    },
+    {
+      "id": "up-next",
+      "title": "Up Next",
+      "eyebrow": "First development priority",
+      "description": "Broader reading formats, building on the current EPUB focus. Each format will be tested and refined before its support is confirmed."
+    },
+    {
+      "id": "planned",
+      "title": "Planned",
+      "eyebrow": "Organization, then connection",
+      "description": "After the expanded format foundation: Smart Library and organization first, followed by Calibre integration."
+    },
+    {
+      "id": "exploring",
+      "title": "Exploring",
+      "eyebrow": "Longer-term possibilities",
+      "description": "Directions we want to investigate. Inclusion here is not a promise that every capability will ship."
+    }
+  ],
+  "launchFoundation": [
+    {
+      "id": "epub-reading",
+      "title": "A comfortable EPUB reader",
+      "description": "Portrait and landscape reading with Automatic, Single Page and Facing Pages. Columns adapt to usable reading width.",
+      "details": [
+        "Reading appearance customization, progress and saved position.",
+        "Contents, supported text search, bookmarks and Go Back.",
+        "Supported illustrations and image navigation; availability depends on the EPUB."
+      ]
+    },
+    {
+      "id": "personal-library",
+      "title": "Your library, under your control",
+      "description": "Import supported EPUB files or nested folders, browse and search your Bookshelf, and organize books into collections.",
+      "details": [
+        "Multiple sources, source inspection and refresh.",
+        "Bring child-folder sources together under a parent while preserving existing book identity and reading state.",
+        "Metadata and cover overrides, removed-book recovery and local reading state."
+      ]
+    },
+    {
+      "id": "adaptive-devices",
+      "title": "Native, adaptable layouts",
+      "description": "Native iPhone and iPad interfaces that respond to the space available.",
+      "details": [
+        "Layouts adapt to available reading space in portrait and landscape.",
+        "Device compatibility details will be confirmed alongside the public release."
+      ]
+    },
+    {
+      "id": "free-launch",
+      "title": "Free reading. Optional support.",
+      "description": "The initial release is planned to be Free, with no subscription required.",
+      "details": [
+        "Optional Buy Us a Coffee consumable support purchases are subject to final App Store qualification and unlock no additional reading features.",
+        "Lifetime Pro is not offered at the initial launch."
+      ]
+    }
+  ],
+  "features": [
+    {
+      "id": "pdf-qualification",
+      "title": "PDF: build on existing support",
+      "description": "Build on existing PDF import and reading support, with further work to complete and qualify the experience across a wider range of documents.",
+      "status": "up-next",
+      "category": "Reading formats",
+      "displayOrder": 10,
+      "lastReviewed": "2026-11-05",
+      "details": [
+        "Reliable opening, rendering, fit/zoom and navigation.",
+        "Page-position persistence, supported bookmarks and library integration.",
+        "Test larger documents while keeping memory use predictable."
+      ]
+    },
+    {
+      "id": "plain-text",
+      "title": "Plain text, thoughtfully presented",
+      "description": "Explore TXT import and reading with dependable text handling and a place in your personal library.",
+      "status": "up-next",
+      "category": "Reading formats",
+      "displayOrder": 20,
+      "lastReviewed": "2026-11-05",
+      "details": [
+        "Unicode and character-encoding handling.",
+        "Readable typography, navigation and saved progress.",
+        "Metadata integration and appropriate large-file behaviour."
+      ]
+    },
+    {
+      "id": "comic-formats",
+      "title": "Comics and image-based reading",
+      "description": "Expand toward CBZ and suitable image collections. CBR support depends on compatibility and licensing evaluation.",
+      "status": "up-next",
+      "category": "Reading formats",
+      "displayOrder": 30,
+      "lastReviewed": "2026-11-05",
+      "details": [
+        "Full-page presentation, fit/zoom and appropriate reading direction.",
+        "Efficient image loading, saved progress and supported bookmarks.",
+        "Supported archive and compression variations will be confirmed after testing."
+      ]
+    },
+    {
+      "id": "tags-smart-collections",
+      "title": "Tags and Smart Library",
+      "description": "Add user-defined tags and collections that fill themselves using rules, built around one logical library.",
+      "status": "planned",
+      "category": "Library organization",
+      "displayOrder": 10,
+      "lastReviewed": "2026-11-05",
+      "details": [
+        "Tag editing, filtering and search.",
+        "Potential rules for author, title, tags, format, reading status and available metadata.",
+        "Organization should preserve book identity and reading data."
+      ]
+    },
+    {
+      "id": "advanced-organization",
+      "title": "More ways to find and organize books",
+      "description": "Develop combined filters, better sorting and useful saved views for larger collections.",
+      "status": "planned",
+      "category": "Library organization",
+      "displayOrder": 20,
+      "lastReviewed": "2026-11-05",
+      "details": [
+        "Explore bulk metadata editing and better metadata inspection.",
+        "Make relationships between multiple linked files easier to understand. Multiple files linked to one book do not necessarily have identical contents.",
+        "Keep organization efficient as the library grows, without repeated full scans."
+      ]
+    },
+    {
+      "id": "calibre-integration",
+      "title": "Calibre, after the library foundation",
+      "description": "Bring useful Calibre-managed books and metadata into Aflow Read after tags and organization are established.",
+      "status": "planned",
+      "category": "Library integration",
+      "displayOrder": 30,
+      "lastReviewed": "2026-11-05",
+      "details": [
+        "Explore practical import or transfer workflows, metadata, tags, authors and series.",
+        "The mechanism is undecided: file/export workflows or compatible server access may be considered.",
+        "No promise of wireless bidirectional sync, metadata editing or full Calibre library control. Calibre will not be required for basic use."
+      ]
+    },
+    {
+      "id": "optional-sync",
+      "title": "Optional Apple-device synchronization",
+      "description": "Explore progress, bookmarks, collections, preferences and library restoration across supported Apple devices. Cross-device library and reading-state sync is not part of the initial release.",
+      "status": "exploring",
+      "category": "Cross-device reading",
+      "displayOrder": 10,
+      "lastReviewed": "2026-11-05",
+      "details": [
+        "Keep synchronization optional and basic local reading independent.",
+        "Preserve meaningful local reading state when sessions diverge; let the reader choose an opening position without silently destroying the alternative.",
+        "Automatic synchronization of every file or setting is not promised. Accessing files in iCloud Drive is different from syncing your library and reading state."
+      ]
+    },
+    {
+      "id": "reading-personalization",
+      "title": "More ways to make reading yours",
+      "description": "Explore richer themes, presets, typography choices, layout controls and accessibility options.",
+      "status": "exploring",
+      "category": "Reading experience",
+      "displayOrder": 20,
+      "lastReviewed": "2026-11-05",
+      "details": [
+        "Build on the existing appearance tools.",
+        "Future scope and availability will be decided after design and qualification."
+      ]
+    },
+    {
+      "id": "private-reading-insights",
+      "title": "Reading insights that respect privacy",
+      "description": "Explore helpful reading history, time, habits and progress summaries without invasive tracking or required external analytics.",
+      "status": "exploring",
+      "category": "Reading insights",
+      "displayOrder": 30,
+      "lastReviewed": "2026-11-05",
+      "details": [
+        "Useful personal information rather than a requirement to share reading activity.",
+        "Specific metrics and data handling are not yet announced."
+      ]
+    },
+    {
+      "id": "reading-refinements",
+      "title": "Keep improving everyday reading",
+      "description": "Continue work on navigation, chapter transitions, complex EPUBs, image-heavy books, accessibility and supported language or reading-direction scenarios.",
+      "status": "exploring",
+      "category": "Reading experience",
+      "displayOrder": 40,
+      "lastReviewed": "2026-11-05",
+      "details": [
+        "Prioritize demonstrated reader needs and verified improvements.",
+        "Preserve reading positions and library integrity as the experience evolves."
+      ]
+    }
+  ]
+}
