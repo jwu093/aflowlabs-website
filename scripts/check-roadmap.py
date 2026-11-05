@@ -45,7 +45,9 @@ class Document(HTMLParser):
         if tag=='link'and a.get('rel')=='canonical':self.canonical.append(a['href'])
         for k in ['href','src']:
             if k in a:self.refs.append(a[k])
-        if tag in ['script','iframe','form']:raise AssertionError('unexpected active content')
+        if tag in ['iframe','form']:raise AssertionError('unexpected active content')
+        if tag=='script':assert a.get('src')=='/assets/navigation.js'and 'defer'in a,'unclassified script'
+        if tag=='script':self.refs.append(a['src'])
 pages={}
 for page in ROOT.rglob('*.html'):
     if '.git'in page.parts:continue
@@ -67,5 +69,5 @@ assert road.h1==1 and road.main==1
 assert road.canonical==['https://aflowlabs.com/aflow-read/roadmap/']
 assert all(s in road.ids for s in m.STATUSES)
 assert not re.search(r'\b[0-9a-f]{40}\b|/Users/|/Volumes/|LAUNCH-[A-Z]|TestFlight',m.OUTPUT.read_text()),'internal evidence leaked into public page'
-checks+=['all site local assets/routes/fragments resolve','single h1/main and exact canonical','no active embeds or tracking','no internal IDs or private paths']
+checks+=['all site local assets/routes/fragments resolve','single h1/main and exact canonical','only classified local navigation script; no embeds/forms','no internal IDs or private paths']
 print(json.dumps({'status':'PASS','checks':checks,'HTMLPagesChecked':len(pages),'futureFeatures':len(d['features']),'launchPreviewCards':len(d['launchFoundation']),'availableFeatures':sum(f['status']=='available'for f in d['features']),'lastReviewed':d['lastReviewed']},indent=2))

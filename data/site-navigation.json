@@ -1,0 +1,121 @@
+{
+  "company": [
+    {
+      "label": "Home",
+      "href": "/",
+      "key": "home"
+    },
+    {
+      "label": "Products",
+      "href": "/#products",
+      "key": "products"
+    },
+    {
+      "label": "About",
+      "href": "/#about",
+      "key": "about"
+    },
+    {
+      "label": "Contact",
+      "href": "/#contact",
+      "key": "contact"
+    }
+  ],
+  "product": [
+    {
+      "label": "Overview",
+      "href": "/aflow-read/",
+      "key": "overview"
+    },
+    {
+      "label": "Features",
+      "href": "/aflow-read/#features",
+      "key": "features"
+    },
+    {
+      "label": "Roadmap",
+      "href": "/aflow-read/roadmap/",
+      "key": "roadmap"
+    },
+    {
+      "label": "Support",
+      "href": "/support/aflow-read/",
+      "key": "support"
+    },
+    {
+      "label": "Privacy",
+      "href": "/legal/aflow-read/privacy/",
+      "key": "privacy"
+    },
+    {
+      "label": "Aflow Labs",
+      "href": "/",
+      "key": "company"
+    }
+  ],
+  "footerGroups": [
+    {
+      "label": "Aflow Read",
+      "links": [
+        {
+          "label": "Product",
+          "href": "/aflow-read/"
+        },
+        {
+          "label": "Roadmap",
+          "href": "/aflow-read/roadmap/"
+        },
+        {
+          "label": "Support",
+          "href": "/support/aflow-read/"
+        },
+        {
+          "label": "Privacy",
+          "href": "/legal/aflow-read/privacy/"
+        }
+      ]
+    },
+    {
+      "label": "DwellCheck",
+      "links": [
+        {
+          "label": "Product information",
+          "href": "/#dwellcheck"
+        },
+        {
+          "label": "Support",
+          "href": "/support/"
+        },
+        {
+          "label": "Privacy",
+          "href": "/privacy/"
+        },
+        {
+          "label": "Terms",
+          "href": "/terms/"
+        }
+      ]
+    },
+    {
+      "label": "Company",
+      "links": [
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Products",
+          "href": "/#products"
+        },
+        {
+          "label": "About",
+          "href": "/#about"
+        },
+        {
+          "label": "Contact",
+          "href": "/#contact"
+        }
+      ]
+    }
+  ]
+}
