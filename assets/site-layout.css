@@ -10,3 +10,6 @@
 
 /* Display the unchanged accepted app icon with platform-like rounded corners. */
 .read-brand img,.product-heading img{border-radius:22%;object-fit:contain}
+
+/* Official Apple artwork, unchanged, with an accessible download target. */
+.app-store-link{display:inline-flex;align-items:center;justify-content:center;min-height:54px;flex-shrink:0}.app-store-link img{display:block;width:162px;height:54px}.read-actions{align-items:center}

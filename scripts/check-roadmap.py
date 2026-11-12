@@ -27,6 +27,8 @@ release={'version':'1.0','releasedOn':'2026-11-05','appStoreURL':'https://apps.a
 def promote(x):
     x['publication'].update(phase='released',acceptedPublicRelease=release)
     x['features'][0].update(status='available',releasedVersion='1.0')
+    for f in x['features']:
+        if f['status']=='available':f['releasedVersion']='1.0'
 reject('public release requires evidence',promote)
 reject('internal acceptance evidence rejected',promote,dict(release,publicReleaseAccepted=False))
 reject('mismatched accepted release rejected',promote,dict(release,publicReleaseAccepted=True,version='2.0'))

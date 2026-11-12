@@ -30,11 +30,17 @@ product=(ROOT/'aflow-read/index.html').read_text()
 if json.loads((ROOT/'data/aflow-read-roadmap.json').read_text())['publication']['phase']=='prelaunch':
  assert 'Preparing for launch'in home and 'Preparing for launch'in product
 assert 'iphone-reader.jpeg'in product and 'iphone-appearance.jpeg'in product
-assert 'structured Cloud library sync is not part of the Free launch'in product
+assert 'does not automatically synchronize your library or reading state'in product
+for page in [home,product]:
+ assert 'Available now on the App Store'in page and 'Preparing for launch'not in page
+ assert 'download-on-the-app-store.svg'in page and 'https://apps.apple.com/app/id6806921026'in page
+ assert all(term in page for term in ['EPUB','PDF','CBZ','Books and comics are not included'])
+assert product.count('https://apps.apple.com/app/id6806921026')>=2
+assert 'Optional Buy Us a Coffee purchases do not unlock reading functionality'in product
 support=(ROOT/'support/aflow-read/index.html').read_text()
 assert all(x in support for x in ['Add Library Folder','Show books with multiple files','Consolidation Stopped','Saving Library','Restore Access','Go back to','Settings → Send Feedback'])
 assert 'Purchase-help instructions will be added after the final App Store configuration is verified'in support
-print(json.dumps({'status':'PASS','scope':'static hierarchy, generated shells, truthful prelaunch boundaries and semantic content','pages':8},indent=2))
+print(json.dumps({'status':'PASS','scope':'static hierarchy, generated shells, truthful public-release boundaries and semantic content','pages':8},indent=2))
 
 # Aflow Read branding must use the actual accepted app asset, not a substitute mark.
 icon = '/assets/aflow-read/app-icon.png'

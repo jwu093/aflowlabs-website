@@ -2,12 +2,16 @@
   "schemaVersion": 1,
   "product": "Aflow Read",
   "tagline": "Your books. Your space. Your reading experience.",
-  "lastReviewed": "2026-11-05",
-  "reviewNote": "Reviewed for our current launch plans and longer-term product direction.",
+  "lastReviewed": "2026-11-12",
+  "reviewNote": "Public availability and version 1.0.1 capabilities reviewed. Future directions remain subject to change.",
   "publication": {
-    "phase": "prelaunch",
-    "acceptedPublicRelease": null,
-    "notice": "We are preparing Aflow Read’s first public App Store release. Explore the intended launch foundation below while final release checks are completed."
+    "phase": "released",
+    "acceptedPublicRelease": {
+      "version": "1.0.1",
+      "releasedOn": "2026-11-11",
+      "appStoreURL": "https://apps.apple.com/app/id6806921026"
+    },
+    "notice": "Aflow Read 1.0.1 is available now on the App Store for iPhone and iPad, with EPUB, PDF and CBZ support."
   },
   "expectations": "This roadmap shares our direction, not guaranteed release commitments. Priorities, scope and order may change as we learn from readers and testing. No release dates or future prices are promised.",
   "philosophy": "A native reading experience for iPhone and iPad, built around the books you own. Basic reading and library management should not depend on a subscription, a cloud service or an external library-management tool.",
@@ -24,15 +28,15 @@
     {
       "id": "available",
       "title": "Available Now",
-      "eyebrow": "The launch foundation",
-      "description": "The first public App Store release is still being prepared. Here is a preview of its intended foundation. Released features will appear here once they are publicly available.",
-      "emptyMessage": "Public availability will be confirmed here when the first release is ready."
+      "eyebrow": "In the public release",
+      "description": "Read and organize your own EPUB ebooks, PDF documents and CBZ comics with Aflow Read 1.0.1.",
+      "emptyMessage": ""
     },
     {
       "id": "up-next",
       "title": "Up Next",
       "eyebrow": "First development priority",
-      "description": "Broader reading formats, building on the current EPUB focus. Each format will be tested and refined before its support is confirmed."
+      "description": "Further format work, beyond the EPUB, PDF and CBZ support available today. Features here are not yet available."
     },
     {
       "id": "planned",
@@ -47,60 +51,22 @@
       "description": "Directions we want to investigate. Inclusion here is not a promise that every capability will ship."
     }
   ],
-  "launchFoundation": [
-    {
-      "id": "epub-reading",
-      "title": "A comfortable EPUB reader",
-      "description": "Portrait and landscape reading with Automatic, Single Page and Facing Pages. Columns adapt to usable reading width.",
-      "details": [
-        "Reading appearance customization, progress and saved position.",
-        "Contents, supported text search, bookmarks and Go Back.",
-        "Supported illustrations and image navigation; availability depends on the EPUB."
-      ]
-    },
-    {
-      "id": "personal-library",
-      "title": "Your library, under your control",
-      "description": "Import supported EPUB files or nested folders, browse and search your Bookshelf, and organize books into collections.",
-      "details": [
-        "Multiple sources, source inspection and refresh.",
-        "Bring child-folder sources together under a parent while preserving existing book identity and reading state.",
-        "Metadata and cover overrides, removed-book recovery and local reading state."
-      ]
-    },
-    {
-      "id": "adaptive-devices",
-      "title": "Native, adaptable layouts",
-      "description": "Native iPhone and iPad interfaces that respond to the space available.",
-      "details": [
-        "Layouts adapt to available reading space in portrait and landscape.",
-        "Device compatibility details will be confirmed alongside the public release."
-      ]
-    },
-    {
-      "id": "free-launch",
-      "title": "Free reading. Optional support.",
-      "description": "The initial release is planned to be Free, with no subscription required.",
-      "details": [
-        "Optional Buy Us a Coffee consumable support purchases are subject to final App Store qualification and unlock no additional reading features.",
-        "Lifetime Pro is not offered at the initial launch."
-      ]
-    }
-  ],
+  "launchFoundation": [],
   "features": [
     {
       "id": "pdf-qualification",
-      "title": "PDF: build on existing support",
-      "description": "Build on existing PDF import and reading support, with further work to complete and qualify the experience across a wider range of documents.",
-      "status": "up-next",
+      "title": "PDF documents",
+      "description": "Read PDF documents alongside your ebooks and comics.",
+      "status": "available",
       "category": "Reading formats",
       "displayOrder": 10,
-      "lastReviewed": "2026-11-05",
+      "lastReviewed": "2026-11-12",
       "details": [
-        "Reliable opening, rendering, fit/zoom and navigation.",
-        "Page-position persistence, supported bookmarks and library integration.",
-        "Test larger documents while keeping memory use predictable."
-      ]
+        "Page navigation and zoom.",
+        "Bookmarks and saved reading progress.",
+        "Import and organize PDFs in your personal library."
+      ],
+      "releasedVersion": "1.0.1"
     },
     {
       "id": "plain-text",
@@ -118,17 +84,18 @@
     },
     {
       "id": "comic-formats",
-      "title": "Comics and image-based reading",
-      "description": "Expand toward CBZ and suitable image collections. CBR support depends on compatibility and licensing evaluation.",
-      "status": "up-next",
+      "title": "CBZ comics",
+      "description": "Enjoy CBZ comics and manga in your personal library.",
+      "status": "available",
       "category": "Reading formats",
-      "displayOrder": 30,
-      "lastReviewed": "2026-11-05",
+      "displayOrder": 20,
+      "lastReviewed": "2026-11-12",
       "details": [
-        "Full-page presentation, fit/zoom and appropriate reading direction.",
-        "Efficient image loading, saved progress and supported bookmarks.",
-        "Supported archive and compression variations will be confirmed after testing."
-      ]
+        "Zoom, reading direction and flexible page layouts.",
+        "Bookmarks and saved reading progress.",
+        "Bring your own CBZ files; comics are not included."
+      ],
+      "releasedVersion": "1.0.1"
     },
     {
       "id": "tags-smart-collections",
@@ -175,7 +142,7 @@
     {
       "id": "optional-sync",
       "title": "Optional Apple-device synchronization",
-      "description": "Explore progress, bookmarks, collections, preferences and library restoration across supported Apple devices. Cross-device library and reading-state sync is not part of the initial release.",
+      "description": "Explore progress, bookmarks, collections, preferences and library restoration across supported Apple devices. Cross-device library and reading-state sync is not currently available.",
       "status": "exploring",
       "category": "Cross-device reading",
       "displayOrder": 10,
@@ -224,6 +191,64 @@
         "Prioritize demonstrated reader needs and verified improvements.",
         "Preserve reading positions and library integrity as the experience evolves."
       ]
+    },
+    {
+      "id": "epub-reading",
+      "title": "A comfortable EPUB reader",
+      "description": "Portrait and landscape reading with Automatic, Single Page and Facing Pages. Columns adapt to usable reading width.",
+      "details": [
+        "Reading appearance customization, progress and saved position.",
+        "Contents, supported text search, bookmarks and Go Back.",
+        "Supported illustrations and image navigation; availability depends on the EPUB."
+      ],
+      "status": "available",
+      "category": "Reading and library",
+      "displayOrder": 40,
+      "lastReviewed": "2026-11-12",
+      "releasedVersion": "1.0.1"
+    },
+    {
+      "id": "personal-library",
+      "title": "Your library, under your control",
+      "description": "Import EPUB, PDF and CBZ files or nested folders, browse and search your Bookshelf, and organize publications into collections.",
+      "details": [
+        "Multiple sources, source inspection and refresh.",
+        "Hide, remove or restore publications through reviewed bulk actions. Removing a publication from the library does not automatically delete its files.",
+        "Local storage and optional iCloud Drive copy management; reading state and automatic cross-device library synchronization are separate."
+      ],
+      "status": "available",
+      "category": "Reading and library",
+      "displayOrder": 50,
+      "lastReviewed": "2026-11-12",
+      "releasedVersion": "1.0.1"
+    },
+    {
+      "id": "adaptive-devices",
+      "title": "Native, adaptable layouts",
+      "description": "Native iPhone and iPad interfaces that respond to the space available.",
+      "details": [
+        "Layouts adapt to available reading space in portrait and landscape.",
+        "Available for iPhone and iPad running iOS 17 or later."
+      ],
+      "status": "available",
+      "category": "Reading and library",
+      "displayOrder": 60,
+      "lastReviewed": "2026-11-12",
+      "releasedVersion": "1.0.1"
+    },
+    {
+      "id": "free-launch",
+      "title": "Free reading. Optional support.",
+      "description": "Read and organize your own publications for free, with no subscription required.",
+      "details": [
+        "Books and comics are not included.",
+        "Optional Buy Us a Coffee purchases through Apple are a thank-you and do not unlock reading functionality."
+      ],
+      "status": "available",
+      "category": "Reading and library",
+      "displayOrder": 70,
+      "lastReviewed": "2026-11-12",
+      "releasedVersion": "1.0.1"
     }
   ]
 }
